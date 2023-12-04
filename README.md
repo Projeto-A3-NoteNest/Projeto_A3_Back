@@ -15,6 +15,7 @@ Passo a Passo:
 6) Em relção ao MYSQL, colocar o seguinte código:
 
   CREATE database notenest;
+  
   USE notenest;
   
   CREATE TABLE lembretes (
