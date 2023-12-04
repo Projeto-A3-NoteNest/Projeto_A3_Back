@@ -16,6 +16,7 @@ Passo a Passo:
 
   CREATE database notenest;
   USE notenest;
+  
   CREATE TABLE lembretes (
   id_lembrete BIGINT auto_increment PRIMARY KEY,
   nome_lembrete VARCHAR(255) NOT NULL,
