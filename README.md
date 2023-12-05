@@ -12,7 +12,7 @@
 2) Verificar no package.json na parte de dependências, está: "amqplib": "0.10.3" para o funcionamento do barramento;
 3) No terminal, é preciso dar um npm install, para instalar as dependências do projeto e depois um npm start para ele rodar;
 4) Alterar, caso necessário a porta de conexão com o MYSQL, na configuração do banco de dados, para a porta necessária;
-5) Agora no Postman, vai colocar a rota desejada, por exemplo no caso de criar um lembrete: "POST: localhost:3000/lembretes";
+5) Para fazer um teste de rotas no Postman, se coloca a rota desejada, por exemplo no caso de criar um lembrete: "POST: localhost:3000/lembretes";
 6) No terminal da IDE, vai aparecer "publishing", singificando que a rota desejada foi colocada na fila do barramento, no seguinte endereço: localhost:15672;
 7) Em relação ao MYSQL, utilize os seguintes códigos:
 
