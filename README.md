@@ -5,7 +5,7 @@
 - Docker;
 - Postman;
 - MYSQL;
-- Node 20;
+- Node.js na versão 20;
 
 💻 Passo a Passo:
 1) No cmd, colocar o seguinte código: docker run -d -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management;
@@ -19,8 +19,9 @@
    - CREATE database notenest;
    - USE notenest;
    - CREATE TABLE lembretes (
-  id_lembrete BIGINT auto_increment PRIMARY KEY,
+   id_lembrete BIGINT auto_increment PRIMARY KEY,
   nome_lembrete VARCHAR(255) NOT NULL,
+  dia_semana VARCHAR(20) NOT NULL,
   concluido BOOLEAN DEFAULT FALSE,
   data_lembrete DATE,
   categoria VARCHAR(36)
@@ -29,7 +30,7 @@
   id_obs BIGINT auto_increment PRIMARY KEY,
   texto TEXT,
   id_lembrete BIGINT,
- FOREIGN KEY (id_lembrete) REFERENCES lembretes(id_lembrete)
+  FOREIGN KEY (id_lembrete) REFERENCES lembretes(id_lembrete)
 );
 
 
